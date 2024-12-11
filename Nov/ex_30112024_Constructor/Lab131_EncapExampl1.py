@@ -11,14 +11,22 @@ class Car:
 
     def change_password(self):
         print(self.password)
+        print(self.__password_secure)
 
 
-# object_ref = Car()
-# print(object_ref.password) #Public variable_we can change password
-# object_ref.password = "Geeta" #Public variable_we can change password
-# print(object_ref.password) #Public variable_we can change password
-
+# # object_ref = Car()
+# # print(object_ref.password) #Public variable_we can change password
+# # object_ref.password = "Geeta" #Public variable_we can change password
+# # print(object_ref.password) #Public variable_we can change password
+#
 object_ref = Car()
 print(object_ref.password_secure) #Private variable_we can't change password
 object_ref.password_secure = "Geeta Sharma" #Public variable_we can't change password
 print(object_ref.__password_secure)
+
+
+# Change password
+# object_ref = Car()
+# print(object_ref.password)
+# object_ref.change_password = "Preeti"
+# print(object_ref.change_password)
